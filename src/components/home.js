@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Ensure this import is included
+import { Link } from 'react-router-dom'; 
 
 const cars = [
   { title: "DS4", img: "images/DS4-Cross.webp", desc: "DS4, élue plus belle voiture de l’année", price: "25000$" },

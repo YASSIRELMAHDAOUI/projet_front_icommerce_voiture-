@@ -1,6 +1,6 @@
-/* Login.css */
 
-/* خلفية صفحة الـ Login */
+
+
 .login-container {
   background-image: url('C:\Users\yassir\OneDrive\Desktop\projet\public\images\voiture.jpg');
   background-size: cover;
@@ -28,7 +28,7 @@
 }
 
 .btn:hover {
-  background-color: #0056b3; /* Change la couleur du fond au survol */
-  border-color: #0056b3; /* Change la couleur de la bordure */
-  cursor: pointer; /* Changer le curseur */
+  background-color: #0056b3; 
+  border-color: #0056b3;
+  cursor: pointer;
 }

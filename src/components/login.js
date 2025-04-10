@@ -48,7 +48,7 @@ const Login = () => {
             </div>
           
             
-            {/* Utilisation de Link pour la navigation */}
+           
             {username && password ? (
               <Link to="/home" className="btn btn-primary w-100">Login</Link> 
             ) : (
