@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Importation de Link pour la navigation
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './login.css'; // Importation du fichier CSS
+import './login.css';
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-// Pour afficher une erreur si nécessaire
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Vérification si le nom d'utilisateur ou le mot de passe est vide
+   
 
   };
 
@@ -50,10 +50,10 @@ const Login = () => {
             
             {/* Utilisation de Link pour la navigation */}
             {username && password ? (
-              <Link to="/home" className="btn btn-primary w-100">Login</Link> // Si les champs sont remplis, rediriger vers la page d'accueil
+              <Link to="/home" className="btn btn-primary w-100">Login</Link> 
             ) : (
             
-              <button type="submit" className="btn btn-primary w-100" >Login</button> // Désactiver le bouton si les champs sont vides
+              <button type="submit" className="btn btn-primary w-100" >Login</button> 
               
             )}
           </form>
