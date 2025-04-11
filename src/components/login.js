@@ -10,7 +10,9 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+if (!username || !password) {
+  alert('entrer logi oubien mot de passe !!!')
+}
    
 
   };
@@ -31,7 +33,7 @@ const Login = () => {
                 placeholder="Enter username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                required
+                
               />
             </div>
             <div className="mb-3">
@@ -43,17 +45,18 @@ const Login = () => {
                 placeholder="Enter password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                required
+                
               />
             </div>
           
             
            
             {username && password ? (
-              <Link to="/home" className="btn btn-primary w-100">Login</Link> 
+              <Link to="/home" className="btn btn-primary w-100" >Login</Link> 
             ) : (
             
-              <button type="submit" className="btn btn-primary w-100" >Login</button> 
+              <button type="submit" className="btn btn-primary w-100" >Login</button>
+               
               
             )}
           </form>
