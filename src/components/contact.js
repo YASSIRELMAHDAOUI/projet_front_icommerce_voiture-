@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const ContactUs = () => {
   const [nom, setNom] = useState('');
   const [email, setEmail] = useState('');
@@ -58,8 +58,8 @@ const ContactUs = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary w-100" onClick={handleClick}>Envoyer</button>
-        
+        <button type="submit" className="btn btn-primary w-100" onClick={handleClick}>Envoyer</button>*<br></br>
+        <Link to="/home" className="btn btn-primary w-1" >Retour a la page home</Link>
       </form>
     </div>
   );
